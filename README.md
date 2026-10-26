@@ -67,7 +67,7 @@ When team members open the project, Claude Code will prompt them to install the 
 
 ### Option C: Manual install
 1) **Clone** this repository.  
-2) **Install or symlink** the `core-data-expert/` folder following your tool's official skills installation docs (see links below).  
+2) **Install or symlink** the repository root folder following your tool's official skills installation docs (see links below).
 3) **Use your AI tool** as usual and ask it to use the "core-data-expert" skill for Core Data tasks.
 
 #### Where to Save Skills
@@ -79,7 +79,7 @@ Follow your tool's official documentation, here are a few popular ones:
 
 **How to verify**: 
 
-Your agent should reference the triage/playbook in `core-data-expert/SKILL.md` and jump into the relevant reference file for your error or task.
+Your agent should reference the triage/playbook in `./SKILL.md` and jump into the relevant reference file for your error or task.
 
 ## What This Skill Offers
 
@@ -133,7 +133,7 @@ This skill gives your AI coding tool comprehensive Core Data guidance. It can:
 ## Skill Structure
 
 ```
-core-data-expert/
+./
 ├── SKILL.md                       # Main skill file with decision trees
 └── references/
     ├── _index.md                  # Navigation index
@@ -188,3 +188,7 @@ Created by [Antoine van der Lee](https://www.avanderlee.com), a Swift expert wit
 ## License
 
 This skill is open-source and available under the MIT License. See [LICENSE](LICENSE) for details.
+
+## Curator package
+
+The repository root is the Curator skill package. Check it with `curator skill check . --json`; the manifest is `agent-skill.json`. See [NOTICE](NOTICE) for the pinned upstream provenance.

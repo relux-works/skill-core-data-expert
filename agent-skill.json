@@ -1,0 +1,10 @@
+{
+  "schema_version": 3,
+  "capabilities": {
+    "network": [
+      "developer.apple.com",
+      "github.com",
+      "www.swiftconcurrencycourse.com"
+    ]
+  }
+}
